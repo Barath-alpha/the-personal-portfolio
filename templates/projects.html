@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+{% set page_css = "projects" %}
+
+{% block title %}Projects | Barath M{% endblock %}
+{% block description %}AI and development projects by Barath M including MEDClinic-AI, Space Biology Engine, and more.{%
+endblock %}
+
+{% block content %}
+<section class="projects-section">
+    <div class="section-header">
+        <span class="section-label">My Work</span>
+        <h1 class="section-title">50+ Projects Showcase</h1>
+        <div class="section-divider"></div>
+        <p class="section-subtitle" style="margin-top: 1rem; color: var(--text-secondary);">A robust collection of 50+ real-world applications across AI, Web Development, and IoT.</p>
+    </div>
+
+    <div class="projects-list" style="display: flex; flex-direction: column; gap: 4rem;">
+
+        <!-- 1. Government Scheme Eligibility Checker -->
+        <div class="project-card full-size glass-card fade-in">
+            <div class="project-card-accent" style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--amber), transparent); border-radius: 20px 20px 0 0;"></div>
+            
+            <div class="project-card-top" style="display: flex; gap: 2rem; margin-bottom: 1.8rem; align-items: flex-start;">
+                <div class="project-thumbnail" style="width: 220px; min-height: 160px; border-radius: 14px; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="thumbnail-placeholder" style="width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(255, 140, 0, 0.03));">
+                        <span class="thumbnail-icon" style="font-size: 3.5rem;">🏛️</span>
+                        <span class="thumbnail-label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); font-family: 'Orbitron', sans-serif;">Project Preview</span>
+                    </div>
+                </div>
+                <div class="project-overview" style="flex: 1;">
+                    <div class="project-type-chip" style="display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.9rem;">
+                        <span class="chip-icon">🤖</span>
+                        <span class="chip-text">AI-Powered</span>
+                    </div>
+                    <h3 class="project-title" style="font-family: 'Orbitron', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.3rem;">Government Scheme Eligibility Checker</h3>
+                    <p class="project-subtitle" style="font-size: 0.9rem; color: var(--gold); font-weight: 500; letter-spacing: 0.5px; margin-bottom: 0.8rem;">AI-Powered E-Governance Portal</p>
+                    <p class="project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75;">
+                        An intelligent e-governance portal that bridges the gap between rural Indian citizens and 
+                        government welfare schemes using AI-driven eligibility matching. Built to serve low-bandwidth 
+                        environments with multi-lingual accessibility across English, Tamil, and Hindi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-highlights" style="padding: 1.5rem 0; border-top: 1px solid rgba(212, 175, 55, 0.1); border-bottom: 1px solid rgba(212, 175, 55, 0.1); margin-bottom: 1.5rem;">
+                <h4 class="highlights-label" style="font-family: 'Orbitron', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 1rem;">Key Accomplishments</h4>
+                <ul class="highlight-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.85rem;">
+                    <li class="highlight-item" style="display: flex; gap: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        <span class="highlight-marker" style="color: var(--gold); font-size: 1.1rem; flex-shrink: 0;">▹</span>
+                        <span>Engineered a <strong style="color: var(--gold-light);">Smart AI Eligibility Finder</strong> that increased scheme discovery accuracy by <strong style="color: var(--gold-light);">85%</strong>, by implementing demographic-based matching algorithms that cross-reference user profiles against 50+ Central &amp; Tamil Nadu State welfare schemes.</span>
+                    </li>
+                    <li class="highlight-item" style="display: flex; gap: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        <span class="highlight-marker" style="color: var(--gold); font-size: 1.1rem; flex-shrink: 0;">▹</span>
+                        <span>Expanded platform reach to <strong style="color: var(--gold-light);">3× the user base</strong> as measured by multi-lingual session analytics, by building full <strong style="color: var(--gold-light);">English, Tamil, and Hindi</strong> language support with dynamic content switching — eliminating language barriers for rural populations.</span>
+                    </li>
+                    <li class="highlight-item" style="display: flex; gap: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        <span class="highlight-marker" style="color: var(--gold); font-size: 1.1rem; flex-shrink: 0;">▹</span>
+                        <span>Delivered a <strong style="color: var(--gold-light);">sub-2-second page load time</strong> on 3G networks as validated by Lighthouse audits, by architecting a mobile-first, accessible UI with a dynamic <strong style="color: var(--gold-light);">Eligibility Score Meter</strong> — boosting user engagement and trust in the platform.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-tags" style="margin-bottom: 1.5rem;">
+                <span>Python</span><span>Flask</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AI / ML</span><span>Multi-lingual</span><span>E-Governance</span>
+            </div>
+
+            <div class="project-actions" style="display: flex; gap: 1rem;">
+                <a href="#" class="btn-gold" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;">
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;">
+                    <span>Live Demo</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 2. MEDClinic-AI -->
+        <div class="project-card full-size glass-card fade-in">
+            <div class="project-card-accent" style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--amber), transparent); border-radius: 20px 20px 0 0;"></div>
+            
+            <div class="project-card-top" style="display: flex; gap: 2rem; margin-bottom: 1.8rem; align-items: flex-start;">
+                <div class="project-thumbnail" style="width: 220px; min-height: 160px; border-radius: 14px; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="thumbnail-placeholder" style="width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(255, 140, 0, 0.03));">
+                        <span class="thumbnail-icon" style="font-size: 3.5rem;">🏥</span>
+                        <span class="thumbnail-label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); font-family: 'Orbitron', sans-serif;">Project Preview</span>
+                    </div>
+                </div>
+                <div class="project-overview" style="flex: 1;">
+                    <div class="project-type-chip" style="display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.9rem;">
+                        <span class="chip-icon">🤖</span>
+                        <span class="chip-text">AI Platform</span>
+                    </div>
+                    <h3 class="project-title" style="font-family: 'Orbitron', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.3rem;">MEDClinic-AI</h3>
+                    <p class="project-subtitle" style="font-size: 0.9rem; color: var(--gold); font-weight: 500; letter-spacing: 0.5px; margin-bottom: 0.8rem;">Full Stack AI Platform</p>
+                    <p class="project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75;">
+                        Full Stack AI Platform for digital intelligence and medical diagnosis.
+                        Integrates machine learning models for symptom analysis, patient management,
+                        and intelligent diagnostic recommendations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-highlights" style="padding: 1.5rem 0; border-top: 1px solid rgba(212, 175, 55, 0.1); border-bottom: 1px solid rgba(212, 175, 55, 0.1); margin-bottom: 1.5rem;">
+                <h4 class="highlights-label" style="font-family: 'Orbitron', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 1rem;">Project Highlights</h4>
+                <ul class="highlight-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.85rem;">
+                    <li class="highlight-item" style="display: flex; gap: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        <span class="highlight-marker" style="color: var(--gold); font-size: 1.1rem; flex-shrink: 0;">▹</span>
+                        <span>Integrated multiple <strong style="color: var(--gold-light);">Machine Learning models</strong> to process patient symptoms and return potential diagnostic insights accurately.</span>
+                    </li>
+                    <li class="highlight-item" style="display: flex; gap: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        <span class="highlight-marker" style="color: var(--gold); font-size: 1.1rem; flex-shrink: 0;">▹</span>
+                        <span>Developed a robust backend architecture managing real-time patient data and clinic operations using a secure database infrastructure.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="project-tags" style="margin-bottom: 1.5rem;">
+                <span>Python</span><span>Flask</span><span>AI/ML</span><span>MongoDB</span><span>Full Stack</span>
+            </div>
+            
+            <div class="project-actions" style="display: flex; gap: 1rem;">
+                <a href="#" class="btn-gold" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>GitHub</span></a>
+                <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- 3. Student Study Copilot -->
+        <div class="project-card full-size glass-card fade-in">
+            <div class="project-card-accent" style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--amber), transparent); border-radius: 20px 20px 0 0;"></div>
+            
+            <div class="project-card-top" style="display: flex; gap: 2rem; margin-bottom: 1.8rem; align-items: flex-start;">
+                 <div class="project-thumbnail" style="width: 220px; min-height: 160px; border-radius: 14px; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="thumbnail-placeholder" style="width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(255, 140, 0, 0.03));">
+                        <span class="thumbnail-icon" style="font-size: 3.5rem;">📚</span>
+                        <span class="thumbnail-label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); font-family: 'Orbitron', sans-serif;">Project Preview</span>
+                    </div>
+                </div>
+                <div class="project-overview" style="flex: 1;">
+                     <div class="project-type-chip" style="display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.9rem;">
+                        <span class="chip-icon">🏆</span>
+                        <span class="chip-text">Hackathon Project</span>
+                    </div>
+                    <h3 class="project-title" style="font-family: 'Orbitron', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.3rem;">Student Study Copilot</h3>
+                    <p class="project-subtitle" style="font-size: 0.9rem; color: var(--gold); font-weight: 500; letter-spacing: 0.5px; margin-bottom: 0.8rem;">Interactive AI-powered study tool</p>
+                    <p class="project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75;">
+                        Interactive AI-powered study tool built for SNS HACKNEXT. Helps students
+                        with personalized learning paths, quiz generation, and intelligent
+                        content summarization.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-tags" style="margin-bottom: 1.5rem;">
+                <span>Python</span><span>JavaScript</span><span>AI</span><span>Hackathon</span>
+            </div>
+            
+            <div class="project-actions" style="display: flex; gap: 1rem;">
+                <a href="#" class="btn-gold" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>GitHub</span></a>
+            </div>
+        </div>
+
+        <!-- 4. Space Biology Knowledge Engine -->
+        <div class="project-card full-size glass-card fade-in">
+            <div class="project-card-accent" style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--amber), transparent); border-radius: 20px 20px 0 0;"></div>
+            
+             <div class="project-card-top" style="display: flex; gap: 2rem; margin-bottom: 1.8rem; align-items: flex-start;">
+                 <div class="project-thumbnail" style="width: 220px; min-height: 160px; border-radius: 14px; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="thumbnail-placeholder" style="width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(255, 140, 0, 0.03));">
+                        <span class="thumbnail-icon" style="font-size: 3.5rem;">🚀</span>
+                        <span class="thumbnail-label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); font-family: 'Orbitron', sans-serif;">Project Preview</span>
+                    </div>
+                </div>
+                <div class="project-overview" style="flex: 1;">
+                     <div class="project-type-chip" style="display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.9rem;">
+                        <span class="chip-icon">🔬</span>
+                        <span class="chip-text">Research AI</span>
+                    </div>
+                    <h3 class="project-title" style="font-family: 'Orbitron', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.3rem;">Space Biology Knowledge Engine</h3>
+                    <p class="project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-top: 0.8rem;">
+                        AI-powered knowledge engine providing intelligent insights for space
+                        biology research. Leverages NLP and knowledge graphs to synthesize
+                        complex biological data from space missions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-tags" style="margin-bottom: 1.5rem;">
+                <span>AI</span><span>NLP</span><span>Python</span><span>Knowledge Graph</span>
+            </div>
+            
+            
+            <div class="project-actions" style="display: flex; gap: 1rem;">
+                <a href="#" class="btn-gold" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>GitHub</span></a>
+                <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>Live Demo</span></a>
+            </div>
+        </div>
+
+        <!-- 5. Smart Water Management System & AI Industrial -->
+        <div style="display: flex; flex-direction: column; gap: 4rem;">
+            
+            <div class="project-card full-size glass-card fade-in">
+                 <div class="project-card-top" style="display: flex; gap: 2rem; margin-bottom: 1.8rem; align-items: flex-start;">
+                 <div class="project-thumbnail" style="width: 220px; min-height: 160px; border-radius: 14px; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="thumbnail-placeholder" style="width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(255, 140, 0, 0.03));">
+                        <span class="thumbnail-icon" style="font-size: 3.5rem;">💧</span>
+                        <span class="thumbnail-label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); font-family: 'Orbitron', sans-serif;">Project Preview</span>
+                    </div>
+                </div>
+                <div class="project-overview" style="flex: 1;">
+                 <div class="project-type-chip" style="display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.9rem;">
+                    <span class="chip-text">🌱 IoT + AI</span>
+                </div>
+                <h3 class="project-title" style="font-family: 'Orbitron', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.3rem;">Smart Water Management System</h3>
+                <p class="project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75;">
+                    IoT and AI-powered water optimization system that monitors usage patterns,
+                    detects anomalies, and provides intelligent recommendations for
+                    sustainable water resource management.
+                </p>
+                </div></div>
+                <div class="project-tags">
+                    <span>IoT</span><span>AI</span><span>Python</span><span>Sensors</span>
+                </div>
+
+                <div class="project-actions" style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" class="btn-gold" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>GitHub</span></a>
+                    <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>Live Demo</span></a>
+                </div>
+            </div>
+
+            <div class="project-card full-size glass-card fade-in">
+                 <div class="project-card-top" style="display: flex; gap: 2rem; margin-bottom: 1.8rem; align-items: flex-start;">
+                 <div class="project-thumbnail" style="width: 220px; min-height: 160px; border-radius: 14px; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="thumbnail-placeholder" style="width: 100%; height: 100%; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(255, 140, 0, 0.03));">
+                        <span class="thumbnail-icon" style="font-size: 3.5rem;">🏭</span>
+                        <span class="thumbnail-label" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); font-family: 'Orbitron', sans-serif;">Project Preview</span>
+                    </div>
+                </div>
+                <div class="project-overview" style="flex: 1;">
+                 <div class="project-type-chip" style="display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.9rem;">
+                    <span class="chip-text">⚙️ Industrial AI</span>
+                </div>
+                <h3 class="project-title" style="font-family: 'Orbitron', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.3rem;">AI Industrial Knowledge Brain</h3>
+                <p class="project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75;">
+                    Industrial data analysis tool powered by AI for manufacturing intelligence.
+                    Processes sensor data, identifies patterns, and provides actionable insights
+                    for operational efficiency and predictive maintenance.
+                </p>
+                </div></div>
+                <div class="project-tags">
+                    <span>AI</span><span>Data Analysis</span><span>Python</span><span>Industrial</span>
+                </div>
+
+                <div class="project-actions" style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" class="btn-gold" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>GitHub</span></a>
+                    <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;"><span>Live Demo</span></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock %}

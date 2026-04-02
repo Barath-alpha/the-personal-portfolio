@@ -1,0 +1,226 @@
+/* ===== CERTIFICATIONS PAGE CSS ===== */
+
+.certs-section {
+    padding-top: 8rem;
+}
+
+/* ===== HACKATHON HIGHLIGHT ===== */
+.hackathon-highlight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(255, 140, 0, 0.04));
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.trophy-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.trophy-icon {
+    font-size: 4rem;
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8));
+    animation: trophy-bounce 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes trophy-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+}
+
+.trophy-content {
+    flex: 1;
+}
+
+.trophy-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.trophy-sub {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.trophy-sub strong {
+    color: var(--gold);
+}
+
+.trophy-badges {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+.t-badge {
+    padding: 0.4rem 1rem;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 140, 0, 0.1));
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    border-radius: 50px;
+    font-size: 0.82rem;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    animation: badge-glow 2s ease-in-out infinite;
+}
+
+.t-badge:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.t-badge:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes badge-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    }
+}
+
+/* ===== CERTS GRID ===== */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+}
+
+/* Full-width spanning card */
+.cert-card-full {
+    grid-column: 1 / -1;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(142, 45, 226, 0.08), rgba(74, 0, 224, 0.05));
+    border: 1px solid rgba(142, 45, 226, 0.4) !important;
+    box-shadow: 0 0 30px rgba(142, 45, 226, 0.15);
+}
+
+.cert-logo-full {
+    width: 72px;
+    height: 72px;
+    font-size: 0.9rem;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(142, 45, 226, 0.5);
+}
+
+.cert-card-full .cert-title {
+    font-size: 1.25rem;
+}
+
+
+.cert-card {
+    padding: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.cert-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+.cert-logo.ibm {
+    background: linear-gradient(135deg, #1F70C1, #0530AD);
+    color: white;
+    box-shadow: 0 0 15px rgba(31, 112, 193, 0.4);
+}
+
+.cert-logo.aws {
+    background: linear-gradient(135deg, #FF9900, #E47911);
+    color: #0a0a0a;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+}
+
+.cert-logo.db {
+    background: linear-gradient(135deg, #FF3621, #C41E3A);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 54, 33, 0.4);
+}
+
+.cert-body {
+    flex: 1;
+}
+
+.cert-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.cert-issuer {
+    font-size: 0.78rem;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.5px;
+}
+
+.cert-desc {
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.cert-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cert-badge.verified {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: #4ade80;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .hackathon-highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+}

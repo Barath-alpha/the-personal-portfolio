@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% set page_css = "skills" %}
+
+{% block title %}Skills | Barath M{% endblock %}
+{% block description %}Barath M's technical skills in AI, Python, Web Development, and more.{% endblock %}
+
+{% block content %}
+<section class="skills-section">
+    <div class="section-header">
+        <span class="section-label">My Arsenal</span>
+        <h1 class="section-title">Skills & Expertise</h1>
+        <div class="section-divider"></div>
+    </div>
+
+    <!-- Languages -->
+    <div class="skills-category fade-in">
+        <h2 class="category-title"><span class="cat-icon">💻</span> Programming Languages</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="95"></div>
+                </div>
+                <div class="skill-tags"><span>ML</span><span>Flask</span><span>Data</span></div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">C / C++</span>
+                    <span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="78"></div>
+                </div>
+                <div class="skill-tags"><span>Systems</span><span>DSA</span></div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="82"></div>
+                </div>
+                <div class="skill-tags"><span>ES6+</span><span>DOM</span><span>APIs</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web -->
+    <div class="skills-category fade-in">
+        <h2 class="category-title"><span class="cat-icon">🌐</span> Web Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">HTML & CSS</span>
+                    <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="90"></div>
+                </div>
+                <div class="skill-tags"><span>Semantic</span><span>Responsive</span></div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">Flask</span>
+                    <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="88"></div>
+                </div>
+                <div class="skill-tags"><span>REST API</span><span>Jinja2</span></div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">MongoDB</span>
+                    <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="75"></div>
+                </div>
+                <div class="skill-tags"><span>NoSQL</span><span>Atlas</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Automation & APIs -->
+    <div class="skills-category fade-in">
+        <h2 class="category-title"><span class="cat-icon">⚙️</span> Automation & Integrations</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">N8N</span>
+                    <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="85"></div>
+                </div>
+                <div class="skill-tags"><span>Workflow Automation</span><span>Low-Code</span></div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-header">
+                    <span class="skill-name">API Integrations</span>
+                    <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-pct="90"></div>
+                </div>
+                <div class="skill-tags"><span>REST/GraphQL</span><span>Webhooks</span><span>Postman</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core -->
+    <div class="skills-category fade-in">
+        <h2 class="category-title"><span class="cat-icon">🧠</span> Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass-card radial-card">
+                <div class="radial-gauge" data-pct="92">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                        <circle class="gauge-fill" cx="50" cy="50" r="40" data-pct="92" />
+                    </svg>
+                    <span class="gauge-label">52%</span>
+                </div>
+                <p class="skill-name-center">Artificial Intelligence</p>
+            </div>
+            <div class="skill-card glass-card radial-card">
+                <div class="radial-gauge" data-pct="90">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                        <circle class="gauge-fill" cx="50" cy="50" r="40" data-pct="90" />
+                    </svg>
+                    <span class="gauge-label">40%</span>
+                </div>
+                <p class="skill-name-center">Data Science</p>
+            </div>
+            <div class="skill-card glass-card radial-card">
+                <div class="radial-gauge" data-pct="85">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                        <circle class="gauge-fill" cx="50" cy="50" r="40" data-pct="85" />
+                    </svg>
+                    <span class="gauge-label">90%</span>
+                </div>
+                <p class="skill-name-center">Design Thinking</p>
+            </div>
+            <div class="skill-card glass-card radial-card">
+                <div class="radial-gauge" data-pct="93">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                        <circle class="gauge-fill" cx="50" cy="50" r="40" data-pct="93" />
+                    </svg>
+                    <span class="gauge-label">90%</span>
+                </div>
+                <p class="skill-name-center">Problem Solving</p>
+            </div>
+            <div class="skill-card glass-card radial-card">
+                <div class="radial-gauge" data-pct="88">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                        <circle class="gauge-fill" cx="50" cy="50" r="40" data-pct="88" />
+                    </svg>
+                    <span class="gauge-label">85%</span>
+                </div>
+                <p class="skill-name-center">Critical Thinking</p>
+            </div>
+            <div class="skill-card glass-card radial-card">
+                <div class="radial-gauge" data-pct="87">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                        <circle class="gauge-fill" cx="50" cy="50" r="40" data-pct="87" />
+                    </svg>
+                    <span class="gauge-label">90%</span>
+                </div>
+                <p class="skill-name-center">Team LeaderShip</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/skills.js') }}"></script>
+{% endblock %}

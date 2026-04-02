@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% set page_css = "home" %}
+
+{% block title %}Barath M | AI & Data Science Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-greeting fade-in">
+            <span class="greeting-badge">⚡ Available for Opportunities</span>
+        </div>
+        <h1 class="hero-headline fade-in">
+            Hello, I'm<br />
+            <span class="gold-text">Barath M</span>
+        </h1>
+        <p class="hero-sub fade-in">Student in (B.Tech:ArtificialIntelligence and DataScience) <br> <br> Full Stack
+            Developer.</p>
+        <p class="hero-bio fade-in">
+            Motivated student with a strong foundation in Python and Machine Learning.
+            Passionate about building AI-driven solutions and scalable web applications.
+        </p>
+        <div class="hero-cta fade-in">
+            <a href="/projects" class="btn-gold"><span>View My Work</span> <span>→</span></a>
+            <a href="/contact" class="btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats fade-in">
+            <div class="stat">
+                <span class="stat-num gold-text">22x</span>
+                <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num gold-text">50x</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num gold-text">20x</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-right fade-in">
+        <div class="hex-container">
+            <!-- Orbital rings -->
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <!-- Orbit dots -->
+            <div class="orbit-dot dot-1"></div>
+            <div class="orbit-dot dot-2"></div>
+            <div class="orbit-dot dot-3"></div>
+            <!-- Hexagonal frame -->
+            <div class="hex-frame">
+                <div class="hex-inner">
+                    <div class="hex-avatar">
+                        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Barath M"
+                            class="hex-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating code snippets -->
+        <div class="code-snippet snippet-1">
+            <span class="code-line"><span style="color:#D4AF37">import</span> tensorflow</span>
+            <span class="code-line"><span style="color:#FF8C00">model</span>.predict(x)</span>
+        </div>
+        <div class="code-snippet snippet-2">
+            <span class="code-line"><span style="color:#D4AF37">def</span> train():</span>
+            <span class="code-line">&nbsp;&nbsp;loss = 0.001</span>
+        </div>
+        <div class="code-snippet snippet-3">
+            <span class="code-line">accuracy: <span style="color:#D4AF37">98.7%</span></span>
+        </div>
+        <!-- Data rings -->
+        <div class="data-ring ring-outer"></div>
+        <div class="data-ring ring-inner"></div>
+    </div>
+
+</section>
+{% endblock %}

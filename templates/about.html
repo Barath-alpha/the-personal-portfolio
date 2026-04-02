@@ -1,0 +1,282 @@
+{% extends "base.html" %}
+{% set page_css = "about" %}
+
+{% block title %}About Me | Barath M{% endblock %}
+{% block description %}Learn about Barath M's education, background, and journey in AI & Data Science.{% endblock %}
+
+{% block content %}
+<!-- Hidden SVG defs for language gauge gradient -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <linearGradient id="langGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#A0892A" />
+            <stop offset="50%" stop-color="#D4AF37" />
+            <stop offset="100%" stop-color="#F5D76E" />
+        </linearGradient>
+    </defs>
+</svg>
+<section class="about-section">
+    <div class="section-header">
+        <span class="section-label">Who I Am</span>
+        <h1 class="section-title">About Me</h1>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="about-grid">
+        <!-- Left: Bio -->
+        <div class="about-bio glass-card fade-in">
+            <div class="bio-icon">🤖</div>
+            <h2 class="bio-title gold-text">AI & Data Science Enthusiast</h2>
+            <p class="bio-text">
+                I'm Barath M, a passionate B.Tech student specializing in Artificial Intelligence
+                and Data Science at SNS College of Technology, Coimbatore. My journey in tech
+                is driven by a deep curiosity about how machines can learn, reason, and solve
+                real-world problems.
+            </p>
+            <p class="bio-text">
+                From building full-stack AI platforms to competing in hackathons, I constantly
+                push the boundaries of what's possible with code and creativity. I believe in
+                the power of AI to transform industries and improve lives.
+            </p>
+            <div class="bio-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Vibe Coding</span>
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Data Science</span>
+                <span class="tag">WEB Development</span>
+                <span class="tag">N8N</span>
+                <span class="tag">API Integrations</span>
+            </div>
+        </div>
+
+        <!-- Right: Education Timeline -->
+        <div class="timeline-container fade-in">
+            <h2 class="timeline-title gold-text">Education Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-year">2025 – Present</div>
+                        <h3 class="timeline-school">SNS College of Technology</h3>
+                        <p class="timeline-location">📍 Coimbatore, Tamil Nadu</p>
+                        <p class="timeline-degree">B.Tech in Artificial Intelligence & Data Science</p>
+                        <div class="timeline-badge">Current</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-year">2021 – 2025</div>
+                        <h3 class="timeline-school">MSP Solai Nadar Memorial Hr Sec School</h3>
+                        <p class="timeline-location">📍 Tamil Nadu</p>
+                        <p class="timeline-degree">Higher Secondary Education</p>
+                        <div class="timeline-badge completed">Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SPECIAL TALENTS ===== -->
+    <div class="talents-section fade-in">
+        <div class="section-header" style="margin-top:5rem;">
+            <span class="section-label">Elite Performance</span>
+            <h2 class="section-title">Special Talents</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="talents-grid">
+            <!-- Card 1: Cricketer -->
+            <div class="talent-card glass-card hud-card">
+                <div class="hud-grid-bg"></div>
+                <div class="talent-icon-wrap">
+                    <svg class="talent-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Cricket bat -->
+                        <rect x="34" y="8" width="12" height="42" rx="4" fill="url(#batGrad)" />
+                        <rect x="36" y="50" width="8" height="18" rx="2" fill="#A0892A" />
+                        <!-- Cricket ball -->
+                        <circle cx="20" cy="58" r="10" fill="url(#ballGrad)" />
+                        <path d="M12 54 Q20 50 28 54" stroke="#0a0a0a" stroke-width="1.5" fill="none" />
+                        <path d="M12 62 Q20 66 28 62" stroke="#0a0a0a" stroke-width="1.5" fill="none" />
+                        <defs>
+                            <linearGradient id="batGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#F5D76E" />
+                                <stop offset="100%" stop-color="#A0892A" />
+                            </linearGradient>
+                            <radialGradient id="ballGrad" cx="40%" cy="35%">
+                                <stop offset="0%" stop-color="#F5D76E" />
+                                <stop offset="100%" stop-color="#D4AF37" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="talent-body">
+                    <h3 class="talent-title">Professional Cricketer</h3>
+                    <p class="talent-sub">Strategic Gameplay &amp; Team Leadership</p>
+                    <div class="talent-stats">
+                        <span class="t-stat"><span class="t-stat-val">⚡</span> Strategic</span>
+                        <span class="t-stat"><span class="t-stat-val">🏏</span> Team Captain</span>
+                    </div>
+                </div>
+                <div class="hud-corner hud-tl"></div>
+                <div class="hud-corner hud-tr"></div>
+                <div class="hud-corner hud-bl"></div>
+                <div class="hud-corner hud-br"></div>
+            </div>
+
+            <!-- Card 2: Athlete -->
+            <div class="talent-card glass-card hud-card athlete-card">
+                <div class="hud-grid-bg"></div>
+                <div class="pulse-ring"></div>
+                <div class="talent-icon-wrap">
+                    <svg class="talent-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Sprinter silhouette -->
+                        <circle cx="55" cy="14" r="7" fill="#D4AF37" />
+                        <!-- Body -->
+                        <line x1="55" y1="21" x2="42" y2="42" stroke="#D4AF37" stroke-width="3.5"
+                            stroke-linecap="round" />
+                        <!-- Arms -->
+                        <line x1="50" y1="30" x2="35" y2="24" stroke="#D4AF37" stroke-width="3"
+                            stroke-linecap="round" />
+                        <line x1="50" y1="30" x2="60" y2="22" stroke="#F5D76E" stroke-width="3" stroke-linecap="round"
+                            opacity="0.6" />
+                        <!-- Legs -->
+                        <line x1="42" y1="42" x2="28" y2="58" stroke="#D4AF37" stroke-width="3.5"
+                            stroke-linecap="round" />
+                        <line x1="42" y1="42" x2="55" y2="60" stroke="#F5D76E" stroke-width="3.5" stroke-linecap="round"
+                            opacity="0.7" />
+                        <!-- Motion blur lines -->
+                        <line x1="20" y1="30" x2="8" y2="30" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                            opacity="0.4" />
+                        <line x1="18" y1="38" x2="4" y2="38" stroke="#D4AF37" stroke-width="1" stroke-linecap="round"
+                            opacity="0.3" />
+                        <line x1="22" y1="46" x2="10" y2="46" stroke="#D4AF37" stroke-width="1" stroke-linecap="round"
+                            opacity="0.2" />
+                    </svg>
+                </div>
+                <div class="talent-body">
+                    <h3 class="talent-title">Track &amp; Field Athlete</h3>
+                    <p class="talent-sub">Endurance, Discipline &amp; High-Performance</p>
+                    <div class="talent-stats">
+                        <span class="t-stat"><span class="t-stat-val">🏃</span> Sprinter</span>
+                        <span class="t-stat"><span class="t-stat-val">💪</span> Endurance</span>
+                    </div>
+                </div>
+                <div class="hud-corner hud-tl"></div>
+                <div class="hud-corner hud-tr"></div>
+                <div class="hud-corner hud-bl"></div>
+                <div class="hud-corner hud-br"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== LANGUAGES KNOWN ===== -->
+    <div class="languages-section fade-in">
+        <div class="section-header" style="margin-top:5rem;">
+            <span class="section-label">Communication Matrix</span>
+            <h2 class="section-title">Languages Known</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="languages-grid">
+            <div class="lang-item" data-pct="100" data-label="Native / Expert" data-lang="Tamil">
+                <div class="lang-gauge">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="lang-track" cx="60" cy="60" r="48" />
+                        <circle class="lang-fill" cx="60" cy="60" r="48" data-pct="100" />
+                    </svg>
+                    <div class="lang-center">
+                        <span class="lang-pct-num">100%</span>
+                    </div>
+                </div>
+                <p class="lang-name">Tamil</p>
+                <p class="lang-label">Native / Expert</p>
+            </div>
+
+            <div class="lang-item" data-pct="90" data-label="Professional Proficiency" data-lang="English">
+                <div class="lang-gauge">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="lang-track" cx="60" cy="60" r="48" />
+                        <circle class="lang-fill" cx="60" cy="60" r="48" data-pct="90" />
+                    </svg>
+                    <div class="lang-center">
+                        <span class="lang-pct-num">90%</span>
+                    </div>
+                </div>
+                <p class="lang-name">English</p>
+                <p class="lang-label">Professional Proficiency</p>
+            </div>
+
+            <div class="lang-item" data-pct="40" data-label="Conversational" data-lang="Hindi">
+                <div class="lang-gauge">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="lang-track" cx="60" cy="60" r="48" />
+                        <circle class="lang-fill" cx="60" cy="60" r="48" data-pct="40" />
+                    </svg>
+                    <div class="lang-center">
+                        <span class="lang-pct-num">40%</span>
+                    </div>
+                </div>
+                <p class="lang-name">Hindi</p>
+                <p class="lang-label">Conversational</p>
+            </div>
+
+            <div class="lang-item" data-pct="30" data-label="Basic Understanding" data-lang="Kannada">
+                <div class="lang-gauge">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="lang-track" cx="60" cy="60" r="48" />
+                        <circle class="lang-fill" cx="60" cy="60" r="48" data-pct="30" />
+                    </svg>
+                    <div class="lang-center">
+                        <span class="lang-pct-num">30%</span>
+                    </div>
+                </div>
+                <p class="lang-name">Kannada</p>
+                <p class="lang-label">Basic Understanding</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Binary rain watermark -->
+    <div class="binary-rain" aria-hidden="true" id="binary-rain"></div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Generate binary rain
+    const rain = document.getElementById('binary-rain');
+    const chars = '01';
+    let html = '';
+    for (let i = 0; i < 30; i++) {
+        let col = '';
+        for (let j = 0; j < 40; j++) {
+            col += chars[Math.floor(Math.random() * 2)];
+            if (j % 5 === 4) col += '<br/>';
+        }
+        html += `<div class="rain-col" style="animation-delay:${Math.random() * 5}s;left:${i * 3.5}%">${col}</div>`;
+    }
+    rain.innerHTML = html;
+
+    // ===== LANGUAGE GAUGE ANIMATION =====
+    const langCircumference = 2 * Math.PI * 48; // r=48
+
+    const langObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.querySelectorAll('.lang-fill').forEach(circle => {
+                const pct = parseInt(circle.dataset.pct);
+                const offset = langCircumference - (pct / 100) * langCircumference;
+                circle.style.strokeDasharray = langCircumference;
+                circle.style.strokeDashoffset = offset;
+            });
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.languages-grid').forEach(el => langObserver.observe(el));
+</script>
+{% endblock %}

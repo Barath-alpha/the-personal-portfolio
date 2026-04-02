@@ -1,0 +1,537 @@
+/* ===== ABOUT PAGE CSS ===== */
+
+.about-section {
+    padding-top: 8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* ===== BIO CARD ===== */
+.about-bio {
+    padding: 2.5rem;
+}
+
+.bio-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bio-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.bio-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.bio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    padding: 0.3rem 0.8rem;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50px;
+    font-size: 0.78rem;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.tag:hover {
+    background: rgba(212, 175, 55, 0.2);
+    border-color: var(--gold);
+    box-shadow: 0 0 10px var(--gold-glow);
+}
+
+/* ===== TIMELINE ===== */
+.timeline-container {
+    padding: 1rem 0;
+}
+
+.timeline-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--gold), var(--amber), transparent);
+    box-shadow: 0 0 10px var(--gold-glow);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.45rem;
+    top: 1.5rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 0 15px var(--gold-glow-strong);
+    animation: dot-pulse 2s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px var(--gold-glow);
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--gold-glow-strong), 0 0 40px rgba(212, 175, 55, 0.2);
+    }
+}
+
+.timeline-content {
+    padding: 1.5rem;
+}
+
+.timeline-year {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: var(--amber);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-school {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-location {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-degree {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+}
+
+.timeline-badge {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 50px;
+    font-size: 0.72rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.timeline-badge.completed {
+    background: rgba(255, 140, 0, 0.1);
+    border-color: rgba(255, 140, 0, 0.3);
+    color: var(--amber);
+}
+
+/* ===== BINARY RAIN ===== */
+.binary-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.rain-col {
+    position: absolute;
+    top: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.65rem;
+    color: rgba(212, 175, 55, 0.06);
+    line-height: 1.4;
+    animation: rain-fall 8s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes rain-fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        padding-top: 7rem;
+    }
+}
+
+/* ===================================================
+   SPECIAL TALENTS — HUD CARDS
+   =================================================== */
+.talents-section {
+    margin-top: 2rem;
+}
+
+.talents-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* HUD Card base */
+.hud-card {
+    position: relative;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    overflow: hidden;
+    border-color: rgba(212, 175, 55, 0.35);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 320px;
+    justify-content: center;
+}
+
+/* Tactical grid background */
+.hud-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(212, 175, 55, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.hud-card:hover .hud-grid-bg {
+    opacity: 1.5;
+    background-image:
+        linear-gradient(rgba(212, 175, 55, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.09) 1px, transparent 1px);
+}
+
+/* Power-up hover glow */
+.hud-card:hover {
+    border-color: var(--gold);
+    box-shadow:
+        0 0 30px rgba(212, 175, 55, 0.4),
+        0 0 60px rgba(212, 175, 55, 0.15),
+        inset 0 0 30px rgba(212, 175, 55, 0.04);
+    transform: translateY(-6px) scale(1.01);
+}
+
+/* HUD corner brackets */
+.hud-corner {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: var(--gold);
+    border-style: solid;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.hud-card:hover .hud-corner {
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.hud-tl {
+    top: 10px;
+    left: 10px;
+    border-width: 2px 0 0 2px;
+}
+
+.hud-tr {
+    top: 10px;
+    right: 10px;
+    border-width: 2px 2px 0 0;
+}
+
+.hud-bl {
+    bottom: 10px;
+    left: 10px;
+    border-width: 0 0 2px 2px;
+}
+
+.hud-br {
+    bottom: 10px;
+    right: 10px;
+    border-width: 0 2px 2px 0;
+}
+
+/* Icon */
+.talent-icon-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.talent-svg {
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.5));
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.hud-card:hover .talent-svg {
+    filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.9));
+    transform: scale(1.08);
+}
+
+/* Talent text */
+.talent-body {
+    position: relative;
+    z-index: 1;
+}
+
+.talent-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.talent-sub {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.talent-stats {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.t-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+}
+
+/* Athlete pulse ring */
+.pulse-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.15);
+    animation: pulse-expand 2.5s ease-out infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pulse-ring::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.1);
+    animation: pulse-expand 2.5s ease-out infinite 0.8s;
+}
+
+@keyframes pulse-expand {
+    0% {
+        transform: translate(-50%, -50%) scale(0.6);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* ===================================================
+   LANGUAGES KNOWN — RADIAL GAUGES
+   =================================================== */
+.languages-section {
+    margin-top: 2rem;
+}
+
+.languages-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.lang-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.lang-gauge {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.lang-gauge svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.lang-track {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.06);
+    stroke-width: 9;
+}
+
+.lang-fill {
+    fill: none;
+    stroke: url(#langGoldGrad);
+    stroke-width: 9;
+    stroke-linecap: round;
+    /* Initial state: empty ring */
+    stroke-dasharray: 301.6;
+    stroke-dashoffset: 301.6;
+    /* Animated to target on scroll */
+    transition: stroke-dashoffset 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.7));
+}
+
+/* Inject gradient via inline SVG defs in the first gauge */
+.lang-gauge:first-child svg defs {
+    display: block;
+}
+
+.lang-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-pct-num {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--gold);
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+    line-height: 1;
+}
+
+.lang-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+}
+
+.lang-label {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    text-align: center;
+    max-width: 120px;
+}
+
+/* Inject SVG gradient for lang rings via a hidden SVG */
+body::after {
+    content: '';
+    display: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .talents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .languages-grid {
+        gap: 2rem;
+    }
+
+    .lang-gauge {
+        width: 120px;
+        height: 120px;
+    }
+
+    .lang-pct-num {
+        font-size: 1.1rem;
+    }
+}
