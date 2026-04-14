@@ -4,6 +4,14 @@
     padding-top: 8rem;
 }
 
+/* ===== HIGHLIGHTS GRID ===== */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
 /* ===== HACKATHON HIGHLIGHT ===== */
 .hackathon-highlight {
     position: relative;
@@ -11,12 +19,18 @@
     align-items: center;
     gap: 2rem;
     padding: 2.5rem;
-    margin-bottom: 4rem;
     background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(255, 140, 0, 0.04));
     border: 1px solid rgba(212, 175, 55, 0.4);
     border-radius: 20px;
     overflow: hidden;
     flex-wrap: wrap;
+    transition: all 0.35s ease;
+}
+
+.hackathon-highlight:hover {
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+    transform: translateY(-5px);
 }
 
 .trophy-glow {

@@ -38,9 +38,11 @@ def send_message():
     name = data.get('name', '')
     email = data.get('email', '')
     message = data.get('message', '')
+
     # In production, configure SMTP here
     print(f"Message from {name} ({email}): {message}")
     return jsonify({'status': 'success', 'message': 'Message received!'})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, use_reloader=False, use_debugger=False)
+
